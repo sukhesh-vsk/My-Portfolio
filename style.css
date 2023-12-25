@@ -1,0 +1,37 @@
+:root {
+    --clr-dark: #070a13;
+    --clr-light: #f1f5f9;
+}
+
+html body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+}
+
+.dark-mode {
+    --clr-dark: #f1f5f9;
+    --clr-light: #070a13;
+}
+
+html body .theme{
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+}
+
+.theme-btn {
+    :hover{
+        cursor: pointer;
+        /* background-color: rgba(128, 128, 128, 0.178); */
+    }
+    img{
+        /* border-radius: 50px; */
+        width: 35px;
+        height: 35px;
+    }
+}
+
+body .nav-link {
+    padding: 0px;
+    font-size: 18px;
+}
