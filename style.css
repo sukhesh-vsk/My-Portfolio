@@ -3,16 +3,21 @@
     --clr-light: #f1f5f9;
 }
 
-html body {
-    font-family: 'League Spartan', sans-serif;
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
-}
-
 .dark-mode {
     --clr-dark: #f1f5f9;
     --clr-light: #070a13;
 }
+
+html {
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+}
+html body{
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+}
+
 
 html body .theme{
     background-color: var(--clr-light);
@@ -34,4 +39,32 @@ html body .theme{
 body .nav-link {
     padding: 0px;
     font-size: 18px;
+}
+
+nav {
+    border-bottom: 1px solid #7d808a3b;
+}
+
+.banner {
+    height: 90vh;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding-bottom: 200px;
+    span {
+        height: 100%;
+    }
+}
+
+.my-image {
+    width: 90%;
+    height: auto;
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* background-position: center; */
 }
