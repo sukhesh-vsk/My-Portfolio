@@ -1,70 +1,61 @@
 :root {
-    --clr-dark: #070a13;
-    --clr-light: #f1f5f9;
+    --clr-text: #070a13;
+    --clr-bg: #f1f5f9;
 }
 
 .dark-mode {
-    --clr-dark: #f1f5f9;
-    --clr-light: #070a13;
+    --clr-text: #f1f5f9;
+    --clr-bg: #070a13;
 }
 
 html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: 'League Spartan', sans-serif;
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
-}
-html body{
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
+    /* background-color: cyan;
+    color: mediumslateblue; */
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
 }
 
+img, svg {
+    display: block;
+    max-width: 100%;
+}
 
-html body .theme{
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
+button {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none;
+    display: inline;
+    color: inherit;
+}
+
+nav {
+    border-bottom: 1px solid #c7c4c449;
+}
+
+.nav-link, .navbar-brand {
+    color: inherit;
+    background-color: inherit;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .theme-btn {
     :hover{
         cursor: pointer;
-        /* background-color: rgba(128, 128, 128, 0.178); */
-    }
-    img{
-        /* border-radius: 50px; */
-        width: 35px;
-        height: 35px;
+        background-color: rgba(128, 128, 128, 0.178);
+        /* border-radius: 15px; */
     }
 }
 
-body .nav-link {
-    padding: 0px;
-    font-size: 18px;
-}
-
-nav {
-    border-bottom: 1px solid #7d808a3b;
-}
-
-.banner {
+.banner-section {
     height: 90vh;
-}
-
-.banner-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    padding-bottom: 200px;
-    span {
-        height: 100%;
-    }
-}
-
-.my-image {
-    width: 90%;
-    height: auto;
-    /* background-repeat: no-repeat; */
-    /* background-size: contain; */
-    /* background-position: center; */
 }
