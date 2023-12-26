@@ -15,7 +15,7 @@
         <!-- Navbar -->
         <nav id="navbar" class="navbar navbar-expand-lg py-2 sticky-top">
             <div class="container pt-2">
-                <!-- Logo -->
+              <!-- Logo -->
               <a class="navbar-brand" href="#">Sukhesh</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,29 +35,40 @@
                   <li class="nav-item px-3">
                     <a class="nav-link" href="#">Contact</a>
                   </li>
+                  <!-- Theme Button -->
+                  <div>
+                    <a class="theme-btn"  onclick="changeTheme()">
+                        <img class="theme-img" src="./assets/light-mode.png" alt="">
+                    </a>
+                  </div>
                 </ul>
-              </div>
-                <!-- Theme Button -->
-              <div>
-                <a class="theme-btn"  onclick="changeTheme()">
-                    <img class="theme-img" src="./assets/light-mode.png" alt="">
-                </a>
               </div>
             </div>
           </nav>
           <!-- Main Content -->
-          <section id="banner-section" class="d-flex align-items-center">
-            <div class="container banner">
+          <section id="banner-section" class="">
+            <div class="container banner h-100 d-flex align-items-center justify-content-center">
                 <div class="row">
-                    <div class="col-md-6 banner-text mt-5 pt-5 ps-5">
-                        <h1 class="m-0 w-100" style="font-size: 70px;">Sukhesh Kumar V.</h1>
-                        <p class="text-start w-100 text-uppercase" style="font-size: large;">Hi I am Sukhesh !<br> A Aspiring Web Developer</p>
-                    </div>
-                    <div class="col-md-6 col-sm-12 d-flex justify-content-center">
-                        <!-- <img src="./assets/my-img.png"> -->
-                        <img class="my-image" src="./assets/banner-img.png" alt="My-Picture">
+                    <div class="col-md-12 banner-text d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="" style="font-size: 70px;">Sukhesh Kumar V.</h1>
+                        <p class="text-center" style="font-size: larger;">An Aspiring Web Developer</p>
+                        <div class="d-flex align-items-center py-5 social-icon">
+                          <a target="_blank" href="https://github.com/sukhesh-vsk/"><img src="./assets/github-light.svg"></a>
+                          <a target="_blank" href="https://www.instagram.com/saakletu/?hl=en"><img src="./assets/instagram-light.svg"></a>
+                          <a href="#"><img src="./assets/facebook-light.svg"></a>
+                          <a href="#"><img src="./assets/twitter-light.svg"></a>
+                          <a target="_blank" href="https://www.linkedin.com/in/sukheshkumar"><img src="./assets/linkedin-light.svg"></a>
+                        </div>
+                        <div class="about-btn">
+                          <a href="#about-section">More About Me</a>
+                        </div>
                     </div>
                 </div>
+                <!-- <div class="row">
+                  <div class="col-md-12">
+
+                  </div>
+                </div> -->
             </div>
           </section>
           <hr>
@@ -65,12 +76,16 @@
           <section id="about-section" class="d-flex align-items-center py-4">
             <div class="container">
               <div  class="row">
-                <div class="col-md-12 w-75 text-center mx-auto">
+                <div class="col-md-6 w-50 text-center ps-5 my-auto">
                   <h4 class="fs-4">About Me</h4>
-                  <p style="font-size: 19px;" class="p-0">
+                  <p style="font-size: 18px;" class="p-0">
                     I'm a 2nd yr student pursuing B.Tech in Information Technology at Sri Krishna College of Technology, Kovaipudhur. I'm a passionate Web Developer and a Competitive Programmer. I'm a self-motivated person who is always intersted in learning new technologies and frameworks. I'm a team player and I can also work independently. I'm a quick learner and I'm always ready to take up new challenges. 
                   </p>
                 </div>
+                <div class="col-md-6 w-50 pe-0 d-flex align-items-center justify-content-center">
+                  <!-- <img src="./assets/my-img.png"> -->
+                  <img class="my-image w-50" src="./assets/banner-img.png" alt="My-Picture">
+              </div>
               </div>
             </div>
           </section>

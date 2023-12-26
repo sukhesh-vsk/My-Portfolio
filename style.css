@@ -25,6 +25,10 @@ img, svg {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     cursor: pointer;
     padding: 0;
@@ -36,6 +40,7 @@ button {
 
 nav {
     border-bottom: 1px solid #c7c4c449;
+    backdrop-filter: blur(1.5px);
 }
 
 .nav-link, .navbar-brand {
@@ -56,6 +61,29 @@ nav {
     }
 }
 
-.banner-section {
+#banner-section {
     height: 90vh;
+}
+
+.social-icon a{
+    padding: 0px 15px;
+    img {
+        cursor: pointer;
+    }
+}
+
+.about-btn a {
+    background-color: #6c757d;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about-btn a:hover {
+    background-color: #c7c7c7;
+    color: #6c757d;
 }
