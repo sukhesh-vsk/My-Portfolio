@@ -33,7 +33,7 @@
                     <a class="nav-link" href="#skills-section">Skills</a>
                   </li>
                   <li class="nav-item px-3">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact-section">Contact</a>
                   </li>
                   <!-- Theme Button -->
                   <div>
@@ -47,20 +47,20 @@
           </nav>
           <!-- Main Content -->
           <section id="banner-section" class="">
-            <div class="container banner h-100 d-flex align-items-center justify-content-center">
+            <div class="container h-100 d-flex align-items-center justify-content-center">
                 <div class="row">
                     <div class="col-md-12 banner-text d-flex flex-column justify-content-center align-items-center">
-                        <h4 class="me-auto ms-2">Hi., I'm</h4>
-                        <h1 class="" style="font-size: 70px;">Sukhesh Kumar V.</h1>
-                        <p class="text-center" style="font-size: larger;">An Aspiring Web Developer</p>
-                        <div class="d-flex align-items-center py-5 social-icon">
+                        <h4 class="me-auto ms-2 banner hidden">Hi., I'm</h4>
+                        <h1 class="banner hidden" style="font-size: 70px;">Sukhesh Kumar V.</h1>
+                        <p class="text-center banner hidden" style="font-size: larger;">An Aspiring Web Developer</p>
+                        <div class="d-flex align-items-center py-5 social-icon banner hidden">
                           <a target="_blank" href="https://github.com/sukhesh-vsk/"><img src="./assets/github-light.svg"></a>
                           <a target="_blank" href="https://www.instagram.com/saakletu/?hl=en"><img src="./assets/instagram-light.svg"></a>
                           <a href="#"><img src="./assets/facebook-light.svg"></a>
                           <a href="#"><img src="./assets/twitter-light.svg"></a>
                           <a target="_blank" href="https://www.linkedin.com/in/sukheshkumar"><img src="./assets/linkedin-light.svg"></a>
                         </div>
-                        <div class="about-btn">
+                        <div class="about-btn hidden banner">
                           <a href="#about-section">More About Me</a>
                         </div>
                     </div>
@@ -68,22 +68,22 @@
                 <!-- <div class="row">
                   <div class="col-md-12">
 
-                  </div>
+                  </div> hidden
                 </div> -->
             </div>
           </section>
           <hr>
           <!-- About -->
-          <section id="about-section" class="d-flex align-items-center justify-content-center py-4">
+          <section id="about-section" class="d-flex align-items-center justify-content-center py-5 my-5">
             <div class="container">
               <div  class="row">
-                <div class="col-12 col-md-6 text-center my-auto">
-                  <h4 class="fs-4">About Me</h4>
+                <div class="col-12 col-md-6 text-center my-auto hidden about">
+                  <h4 class="fs-4 section-title">About Me</h4>
                   <p style="font-size: 18px;" class="p-0">
                     I'm a 2nd yr student pursuing B.Tech in Information Technology at <a href="https://maps.app.goo.gl/b3ifEMt9TPSBiJ8PA" target="_blank">Sri Krishna College of Technology, Kovaipudhur</a>. I'm a passionate Web Developer and a <a href="https://leetcode.com/sukhesh_vsk/" target="_blank">Competitive Programmer</a>. I'm a self-motivated person who is always intersted in learning new technologies and frameworks. I'm a team player and I can also work independently. I'm a quick learner and I'm always ready to take up new challenges. 
                   </p>
                 </div>
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center hidden about">
                   <!-- <img src="./assets/my-img.png"> -->
                   <img class="my-image w-50" src="./assets/banner-img.png" alt="My-Picture">
               </div>
@@ -93,12 +93,12 @@
           <hr>
           <!-- Skills -->
           <section id="skills-section">
-            <div class="container">
+            <div class="container py-5 my-5">
               <div class="row">
-                <div class="col-md-12">
-                  <h4 class="fs-4 text-center">Skills</h4>
+                <div class="col-md-12 hidden skill">
+                  <h4 class="fs-4 text-center section-title">Skills</h4>
                 </div>
-                <div class="row p-4 mx-auto d-flex justify-content-center">
+                <div class="row p-4 mx-auto d-flex justify-content-center  hidden skill">
                   <div class="col-md-2 text-center pb-3">
                     <div class="card">
                       <img src="./assets/skills/c.png" class="card-img-top w-25 my-2 mx-auto" alt="...">
@@ -185,20 +185,22 @@
           </section>
           <hr>
           <!-- Footer -->
-          <footer>
-            <div class="container">
+          <footer id="contact-section">
+            <div class="container hidden">
               <div class="row">
-                <div class="col-md-12 text-center mt-3 px-3">
-                  <h2 class="m-0 p-3">Connect With Me</h2>
-                  <h5 class="w-75 mx-auto">
-                    I'm actively seeking web development opportunities! If you have any projects or collaboration ideas or justwant to say hi, please feel free to connect with me at
+                <div class="col-md-12 text-center mt-3 px-3 hidden connect">
+                  <h2 class="m-0 px-3 pt-3 mb-3 section-title">Connect With Me</h2>
+                  <h5 class="w-75 mx-auto hidden connect">
+                    I'm actively seeking web development opportunities! If you have any projects or collaboration ideas or just want to say hi, please feel free to connect with me at
                     <a class="text-decoration-none" href="mailto:sukhesh.vsk2005@gmail.com" target="_blank">sukhesh.vsk2005@gmail.com</a>
                   </h5>
-                  <p class="mt-5">&lt;/&gt; by Sukhesh ♥</p>
+                  <p class="mt-5 hidden connect">&lt;/&gt; by Sukhesh ♥</p>
                 </div>
               </div>
             </div>
           </footer>
+          <!-- scripts -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
           <script src="./script.js"></script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>       
         </body>
