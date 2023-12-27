@@ -32,3 +32,20 @@ $(document).ready(function(){
         }
     });
 });
+
+// Glitch 
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    setTimeout(() => {
+      const helloWorld = document.querySelector('.bannername.typing-effect');
+      const hiIm = document.querySelector('.banner.hide');
+      helloWorld.classList.add('glitch-effect');
+      setTimeout(() => {
+        helloWorld.innerHTML = "Sukhesh Kumar V.";
+        hiIm.classList.remove('hide');
+        hiIm.classList.add('glitch-effect');
+        helloWorld.classList.remove('typing-effect');
+        console.log(helloWorld.classList);
+      }, 1000); 
+    }, 2000);
+  });
