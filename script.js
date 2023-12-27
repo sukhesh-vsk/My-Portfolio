@@ -19,8 +19,10 @@ const observer = new IntersectionObserver((e) => {
     });
 });
 
-const hidden = document.querySelectorAll('.hidden');
-hidden.forEach((element) => observer.observe(element));
+function observeHidden() {
+    const hidden = document.querySelectorAll('.hidden'); 
+    hidden.forEach((element) => observer.observe(element));
+}
 
 $(document).ready(function(){
     $('a').on('click', function(event) {
@@ -36,16 +38,24 @@ $(document).ready(function(){
 // Glitch 
 
 document.addEventListener('DOMContentLoaded', (event) => {
+    const helloWorld = document.querySelector('.helloworld');
+    const banner = document.querySelector('.banner');
+    banner.remove();
     setTimeout(() => {
-      const helloWorld = document.querySelector('.bannername.typing-effect');
-      const hiIm = document.querySelector('.banner.hide');
-      helloWorld.classList.add('glitch-effect');
-      setTimeout(() => {
-        helloWorld.innerHTML = "Sukhesh Kumar V.";
-        hiIm.classList.remove('hide');
-        hiIm.classList.add('glitch-effect');
         helloWorld.classList.remove('typing-effect');
-        console.log(helloWorld.classList);
-      }, 1000); 
+        helloWorld.classList.add('glitch-effect');
+        setTimeout(() => {
+            helloWorld.remove();
+            document.querySelector('.banner-content').appendChild(banner);
+            document.querySelector('.banner-text').classList.add('glitch-effect');
+            document.querySelector('.banner-name').classList.add('glitch-effect');
+            setTimeout(() => {
+                document.querySelector('.social-icon').classList.remove('hide');
+                document.querySelector('.about-btn').classList.remove('hide');
+                document.querySelector('.banner-text').classList.add('hidden', 'show');
+                document.querySelector('.banner-name').classList.add('hidden', 'show');
+                observeHidden();
+            }, 1000);
+        }, 1000);
     }, 2000);
-  });
+});
