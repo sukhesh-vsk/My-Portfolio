@@ -16,8 +16,8 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     /* background-color: cyan;
     color: mediumslateblue; */
-    background-color: var(--clr-bg);
-    color: var(--clr-text);
+    background-color: var(--clr-text);
+    color: var(--clr-bg);
 }
 
 img, svg {
@@ -81,7 +81,7 @@ nav {
 }
 
 .helloworld {
-    border-right: .05em solid rgb(21, 151, 32);
+    border-right: .05em solid #20C20E;
     font-size:55px;
     color: rgb(21, 151, 32);
 }
