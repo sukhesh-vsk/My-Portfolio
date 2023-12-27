@@ -1,12 +1,23 @@
 const changeTheme = () => {
     if(document.body.className == 'dark-mode'){
+        localStorage.setItem('theme', 'light');
+    }else{
+        localStorage.setItem('theme', 'dark');
+    }
+    location.reload();
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const savedTheme = localStorage.getItem('theme');
+    if(savedTheme === 'dark'){
+        document.body.className = 'dark-mode';
+        document.querySelector('.theme-img').src = './assets/dark-mode.png';
+    } else {
         document.body.className = '';
         document.querySelector('.theme-img').src = './assets/light-mode.png';
-        return;
     }
-    document.querySelector('.theme-img').src = './assets/dark-mode.png';
-    document.body.className = 'dark-mode';
-}
+    
+});
 
 const observer = new IntersectionObserver((e) => {
     e.forEach((entry) => {
