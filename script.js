@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 document.querySelector('.banner-text').classList.add('hidden', 'show');
                 document.querySelector('.banner-name').classList.add('hidden', 'show');
                 observeHidden();
-            }, 1000);
+            }, 500);
         }, 1000);
     }, 2000);
 });
