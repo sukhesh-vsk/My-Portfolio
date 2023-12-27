@@ -1,3 +1,4 @@
+// theme switch
 const changeTheme = () => {
     if(document.body.className == 'dark-mode'){
         localStorage.setItem('theme', 'light');
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
 });
 
+// in animations for elements
 const observer = new IntersectionObserver((e) => {
     e.forEach((entry) => {
         if(entry.isIntersecting) {
@@ -48,25 +50,34 @@ $(document).ready(function(){
 
 // Glitch 
 
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', async (event) => {
     const helloWorld = document.querySelector('.helloworld');
     const banner = document.querySelector('.banner');
+    const bannerText = document.querySelector('.banner-text');
+    const bannerName = document.querySelector('.banner-name');
+    const socialIcon = document.querySelector('.social-icon');
+    const aboutBtn = document.querySelector('.about-btn');
+
+    const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
     banner.remove();
-    setTimeout(() => {
-        helloWorld.classList.remove('typing-effect');
-        helloWorld.classList.add('glitch-effect');
-        setTimeout(() => {
-            helloWorld.remove();
-            document.querySelector('.banner-content').appendChild(banner);
-            document.querySelector('.banner-text').classList.add('glitch-effect');
-            document.querySelector('.banner-name').classList.add('glitch-effect');
-            setTimeout(() => {
-                document.querySelector('.social-icon').classList.remove('hide');
-                document.querySelector('.about-btn').classList.remove('hide');
-                document.querySelector('.banner-text').classList.add('hidden', 'show');
-                document.querySelector('.banner-name').classList.add('hidden', 'show');
-                observeHidden();
-            }, 500);
-        }, 1000);
-    }, 2000);
+
+    // glitches after type writing
+    await sleep(2500);
+    helloWorld.classList.remove('typing-effect');
+    helloWorld.classList.add('glitch-effect');
+    
+    // glitches name text
+    await sleep(1000);
+    helloWorld.remove();
+    document.querySelector('.banner-content').appendChild(banner);
+    bannerText.classList.add('glitch-effect');
+    bannerName.classList.add('glitch-effect');
+
+    // apply normal animations to banner
+    await sleep(500);
+    socialIcon.classList.remove('hide');
+    aboutBtn.classList.remove('hide');
+    bannerText.classList.add('hidden', 'show');
+    bannerName.classList.add('hidden', 'show');
+    observeHidden();
 });
