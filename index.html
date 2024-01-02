@@ -13,6 +13,7 @@
     
     <body class="dark-mode">
         <!-- Navbar --> 
+        <div id="bg" class="">
         <nav id="navbar" class="navbar navbar-expand-lg py-2 sticky-top">
             <div class="container pt-2">
               <!-- Logo -->
@@ -51,10 +52,12 @@
                 <div class="row">
                     <div class="col-md-12 banner-content d-flex flex-column justify-content-center align-items-center">
                         <h1 class="me-auto mb-5 helloworld typing-effect">Hello, World !!&nbsp;</h1>
-                        <span class="banner">
-                          <h4 class="me-auto ms-2 banner-text">Hi., I'm</h4>
-                          <h1 class="me-auto banner-name" style="font-size:55px;">Sukhesh Kumar V.</h1>
-                          <p class="text-center" style="font-size: larger;">An Aspiring Web Developer</p>
+                        <span class="banner d-flex flex-column justify-content-center align-items-center">
+                          <span>
+                            <h4 class="me-auto ms-2 banner-text">Hi., I'm</h4>
+                            <h1 class="me-auto banner-name">Sukhesh Kumar V.</h1>
+                          </span>
+                          <p class="text-center">An Aspiring Web Developer</p>
                           <div class="d-flex align-items-center justify-content-center py-5 social-icon hidden hide">
                             <a target="_blank" href="https://github.com/sukhesh-vsk/"><img src="./assets/github-light.svg"></a>
                             <a target="_blank" href="https://www.instagram.com/saakletu/?hl=en"><img src="./assets/instagram-light.svg"></a>
@@ -63,26 +66,27 @@
                             <a target="_blank" href="https://www.linkedin.com/in/sukheshkumar"><img src="./assets/linkedin-light.svg"></a>
                           </div>
                           <div class="about-btn d-flex justify-content-center hidden text-center">
-                            <a href="#about-section" style="width: 30%; height: 20%;">More About Me</a>
+                            <a href="#about-section" id="about-btn">More About Me</a>
                           </div>
                         </span>
                     </div>
                 </div>
             </div>
           </section>
-          <hr>
+          </div>
+          <hr class="mt-0">
           <!-- About -->
           <section id="about-section" class="d-flex align-items-center justify-content-center py-5 my-5">
             <div class="container">
               <div  class="row">
                 <div class="col-12 col-md-6 text-center my-auto hidden about">
-                  <h4 class="fs-4 section-title">About Me</h4>
-                  <p style="font-size: 18px;" class="p-0">
+                  <h4 class="fs-4 section-title title">About Me</h4>
+                  <p class="w-100 p-3 normal-text">
                     I'm a 2nd yr student pursuing B.Tech in Information Technology at <a href="https://maps.app.goo.gl/b3ifEMt9TPSBiJ8PA" target="_blank">Sri Krishna College of Technology, Kovaipudhur</a>. I'm a passionate Web Developer and a <a href="https://leetcode.com/sukhesh_vsk/" target="_blank">Competitive Programmer</a>. I'm a self-motivated person who is always intersted in learning new technologies and frameworks. I'm a team player and I can also work independently. I'm a quick learner and I'm always ready to take up new challenges. 
                   </p>
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-center justify-content-center hidden about">
-                  <img class="my-image w-50" src="./assets/banner-img.png" alt="My-Picture">
+                  <img class="my-image" src="./assets/banner-img.png" alt="My-Picture">
               </div>
               </div>
             </div>
@@ -93,84 +97,84 @@
             <div class="container py-5 my-5">
               <div class="row">
                 <div class="col-md-12 hidden skill">
-                  <h4 class="fs-4 text-center section-title">Skills</h4>
+                  <h4 class="text-center section-title title">Skills</h4>
                 </div>
-                <div class="row p-4 mx-auto d-flex justify-content-center  hidden skill">
-                  <div class="col-md-2 text-center pb-3">
+                <div class="row p-4 mx-auto d-flex justify-content-center hidden skill skill-text">
+                  <div class="col-md-2 col-4 text-center pb-3">
                     <div class="card">
-                      <img src="./assets/skills/c.png" class="card-img-top w-25 my-2 mx-auto" alt="...">
+                      <img src="./assets/skills/c.png" class="card-img-top my-2 mx-auto" alt="...">
                       <div class="card-body px-0 pt-0">
                         <strong><h4 class="card-title m-0">C</h4></strong>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-2 text-center pb-3">
+                  <div class="col-md-2 col-4 text-center pb-3">
                     <div class="card">
-                      <img src="./assets/skills/cpp.png" class="card-img-top w-25 my-2 mx-auto" alt="...">
+                      <img src="./assets/skills/cpp.png" class="card-img-top my-2 mx-auto" alt="...">
                       <div class="card-body px-0 pt-0">
                         <strong><h4 class="card-title m-0">C++</h4></strong>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-2 text-center pb-3">
+                  <div class="col-md-2 col-4 text-center pb-3">
                     <div class="card">
-                      <img src="./assets/skills/python.png" class="card-img-top w-25 my-2 mx-auto" alt="...">
+                      <img src="./assets/skills/python.png" class="card-img-top my-2 mx-auto" alt="...">
                       <div class="card-body px-0 pt-0">
                         <strong><h4 class="card-title m-0">Python</h4></strong>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-2 text-center pb-3">
+                  <div class="col-md-2 col-4 text-center pb-3">
                     <div class="card">
-                      <img src="./assets/skills/java.png" class="card-img-top w-25 my-2 mx-auto" alt="...">
+                      <img src="./assets/skills/java.png" class="card-img-top my-2 mx-auto" alt="...">
                       <div class="card-body px-0 pt-0">
                         <strong><h4 class="card-title m-0">Java</h4></strong>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-2 text-center pb-3">
+                  <div class="col-md-2 col-4 text-center pb-3">
                     <div class="card">
-                      <img src="./assets/skills/mysql.png" class="card-img-top w-25 my-2 mx-auto" alt="...">
+                      <img src="./assets/skills/mysql.png" class="card-img-top my-2 mx-auto" alt="...">
                       <div class="card-body px-0 pt-0">
                         <strong><h4 class="card-title m-0">My SQL</h4></strong>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-2 text-center pb-3">
+                  <div class="col-md-2 col-4 text-center pb-3">
                     <div class="card">
-                      <img src="./assets/skills/github.png" class="card-img-top w-25 my-2 mx-auto" alt="..." style="border-radius: 7px;">
+                      <img src="./assets/skills/github.png" class="card-img-top my-2 mx-auto" alt="..." style="border-radius: 7px;">
                       <div class="card-body px-0 pt-0">
                         <strong><h4 class="card-title m-0">GitHub</h4></strong>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-2 text-center pb-3">
+                  <div class="col-md-2 col-4 text-center pb-3">
                     <div class="card">
-                      <img src="./assets/skills/html.png" class="card-img-top w-25 my-2 mx-auto" alt="...">
+                      <img src="./assets/skills/html.png" class="card-img-top my-2 mx-auto" alt="...">
                       <div class="card-body px-0 pt-0">
                         <strong><h4 class="card-title m-0">HTML</h4></strong>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-2 text-center pb-3">
+                  <div class="col-md-2 col-4 text-center pb-3">
                     <div class="card">
-                      <img src="./assets/skills/css.png" class="card-img-top w-25 my-2 mx-auto" alt="...">
+                      <img src="./assets/skills/css.png" class="card-img-top my-2 mx-auto" alt="...">
                       <div class="card-body px-0 pt-0">
                         <strong><h4 class="card-title m-0">CSS</h4></strong>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-2 text-center pb-3">
+                  <div class="col-md-2 col-4 text-center pb-3">
                     <div class="card">
-                      <img src="./assets/skills/js.png" class="card-img-top w-25 my-2 mx-auto" alt="...">
+                      <img src="./assets/skills/js.png" class="card-img-top my-2 mx-auto" alt="...">
                       <div class="card-body px-0 pt-0">
                         <strong><h4 class="card-title m-0">JavaScript</h4></strong>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-2 text-center pb-3">
+                  <div class="col-md-2 col-4 text-center pb-3">
                     <div class="card">
-                      <img src="./assets/skills/bootstrap.png" class="card-img-top w-25 my-2 mx-auto" alt="...">
+                      <img src="./assets/skills/bootstrap.png" class="card-img-top my-2 mx-auto" alt="...">
                       <div class="card-body px-0 pt-0">
                         <strong><h4 class="card-title m-0">BootStrap</h4></strong>
                       </div>
@@ -186,8 +190,8 @@
             <div class="container hidden">
               <div class="row">
                 <div class="col-md-12 text-center mt-3 px-3 hidden connect">
-                  <h2 class="m-0 px-3 pt-3 mb-3 section-title">Connect With Me</h2>
-                  <h5 class="w-75 mx-auto letter- hidden connect" style="letter-spacing: 0.1px;">
+                  <h2 class="m-0 px-3 pt-3 mb-3 section-title title">Connect With Me</h2>
+                  <h5 class="mx-auto letter- hidden connect normal-text" style="letter-spacing: 0.1px;">
                     I'm actively seeking web development opportunities! If you have any projects or collaboration ideas or just want to say hi, please feel free to connect with me at
                     <a class="text-decoration-none" href="mailto:sukhesh.vsk2005@gmail.com" target="_blank">sukhesh.vsk2005@gmail.com</a>
                   </h5>

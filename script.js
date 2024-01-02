@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     // glitches name text
     await sleep(1000);
     helloWorld.remove();
+    // document.querySelector('#bg').classList.add('show-background');
     document.querySelector('.banner-content').appendChild(banner);
     bannerText.classList.add('glitch-effect');
     bannerName.classList.add('glitch-effect');
