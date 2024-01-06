@@ -1,11 +1,13 @@
 :root {
     --clr-text: #070a13;
     --clr-bg: #f1f5f9;
+    --bs-emphasis-color-rgb: var(--clr-text);      
 }
 
 .dark-mode {
     --clr-text: #f1f5f9;
     --clr-bg: #070a13;
+    --bs-emphasis-color-rgb: var(--clr-text);      
 }
 
 html {
@@ -14,8 +16,6 @@ html {
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    /* background-color: cyan;
-    color: mediumslateblue; */
     background-color: var(--clr-text);
     color: var(--clr-bg);
     font-size: 16px;
@@ -114,13 +114,7 @@ nav {
     backdrop-filter: blur(1.5px);
 }
 
-.nav-link, .navbar-brand {
-    color: inherit;
-    background-color: inherit;
-}
-
-.nav-link:hover, .navbar-brand:hover {
-    text-decoration: none;
+.navbar-brand, .nav-link {
     color: inherit;
 }
 
