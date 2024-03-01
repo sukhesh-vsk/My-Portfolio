@@ -180,6 +180,12 @@ nav {
     color: #6c757d;
 }
 
+.resume-btn {
+    position: absolute;
+    top: 12%;
+    right: 5%;
+}
+
 .hidden {
     opacity: 0;
     filter: blur(3px);
